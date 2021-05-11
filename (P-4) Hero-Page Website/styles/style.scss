@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import 'responsive';
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Source Sans Pro', sans-serif;
+}
+
+@mixin FlexC () {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // flex-direction: $direction;
+      
+}
+@mixin FlexSA {
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      
+}
+@mixin FlexA {
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      
+}
+
+@mixin BodyBtn {
+      margin: 15px 0px;
+      font-size: 3rem;
+      padding: 6px 26px;
+      border-radius: 11px;
+      color: white;
+      background-color: $textMaincolor;
+      border: 2px solid $textMaincolor;
+
+      
+}
+@mixin BodyBtnhvr {
+      background-color: rgb(255, 255, 255);
+      color: $textMaincolor;
+      border: 2px solid $textMaincolor;
+      transition: all 0.8s ease;
+      cursor: pointer;
+}
+
+
+// @mixin Visiblity {
+//       opacity: 0;
+// }
+
+
+$textMaincolor: #fc7c1a;
+
+
+
+header{
+      @include FlexSA();
+      margin: 20px 50px;
+
+      @include tablet(){
+            flex-direction: column;
+      }
+
+      .nav{
+            @include FlexC();
+
+            @include tablet(){
+                  flex-direction: column;
+                  display: none;
+            }
+      
+                  
+      
+            ul{
+                  @include FlexC();
+                  list-style: none;
+
+                  @include tablet(){
+                        flex-direction: column;
+                        
+                        
+
+                  }
+                  a{
+                        margin: 0px 20px;
+                        color: rgb(0, 0, 0);
+                        text-decoration: none;
+                        font-size: 1.6rem;
+                        cursor: pointer;
+
+                        @include tablet(){
+                              font-size: 1.8rem;
+                              
+                        }
+
+                        &:hover{
+                              color: #fc4a1a;;
+                        }
+                  }
+            }
+            .btn{
+                  margin: 0px 20px;
+                  padding: 2px 14px;
+                  font-size: 1.4rem;
+                  border-radius: 6px;
+                  margin: 15px 0px;
+                  color: white;
+                  background-color: $textMaincolor;
+                  border: 2px solid $textMaincolor;
+                  
+
+                  &:hover{
+                        @include BodyBtnhvr()
+                  }
+            }
+      }
+      
+      .burger{
+            display: none;
+            width: 10%;
+            position: absolute;
+            right: 5%;
+            top: 20px;
+            cursor: pointer;
+
+            @include tablet(){
+                  display: block;
+            }
+
+
+            .line{
+                  background-color: rgb(2, 2, 2);
+                  height: 10px;
+                  margin: 3px 5px;
+            }
+      }
+}
+
+
+
+.container{
+      @include FlexSA();
+      padding: 40px 20px;
+      height: 88vh;
+
+      @include tablet(){
+            flex-direction: column;
+      }
+
+      .caption{
+            width: 60%;
+            margin-left: 40px;
+            h1{
+                  font-size: 3.8rem;
+                  color: $textMaincolor;
+                  font-weight:bolder;
+
+                  @include tablet(){
+                        font-size: 3rem;
+
+                  }
+            }
+            h2{
+                  font-size: 3rem;
+                  color: $textMaincolor;
+                  font-weight:bolder;
+
+                  @include tablet(){
+                        font-size: 2.5rem;
+
+                  }
+            }
+            p{
+                  font-size: 2.6rem;
+
+                  @include tablet(){
+                        font-size: 2rem;
+
+                  }
+            }
+            .btn{
+                  @include BodyBtn();
+
+                  @include tablet(){
+                        font-size: 3.5rem;
+                        padding: 2px 6px;
+
+                  }
+
+                  &:hover{
+                        @include BodyBtnhvr();
+                  }
+            }
+
+      }
+      .pic{
+            display: block;
+            margin: 0px auto 10px auto;
+            width: 70%;
+
+
+            img{
+                  width: 110%;
+                  padding: 4px 10px;
+
+                  @include tablet(){
+                        width: 100%;
+                  }
+            }
+
+      }
+}
+
