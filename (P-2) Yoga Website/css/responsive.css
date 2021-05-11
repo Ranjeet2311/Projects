@@ -1,0 +1,174 @@
+ @media screen and (max-width:910px){
+       .navbar{
+             flex-direction: column;
+             transition: all 3s ease;
+       }
+       .nav_menu{
+             flex-direction: column;
+       }
+       .card_stack{
+             flex-direction: column;
+       }
+       .main_container{
+             flex-direction: column;
+       }
+
+       .burger{
+             display: block;
+       }
+       .container {
+            width: 50vh;
+       }
+
+       .V-responsive{
+             opacity: 0;
+       }
+
+       .H-Responsive{
+            height: 107px;
+       }
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /* header{
+            flex-direction: column;
+      }
+
+      .nav_menu{
+            margin: 0px 4vw;
+            height: 10px;
+            width: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .nav_menu img{
+            display: none;
+      }
+
+      .nav_menu li{
+            font-size: 1.0rem;
+      }
+
+      
+      .search_btn{
+            margin:4px 4px;
+            font-size: 1rem;
+            
+      }
+
+      }
+      /* .v_class{
+            opacity: 0;
+      }
+      .h_nav{
+            height: 166px;
+      } */
+
+      
+      
+
+
+
+
+ /* ___________________________________________________________ */
+
+/* 
+ @media screen and (max-width: 596px){
+
+      .nav_menu li{
+            font-size: 0.9rem;
+      }
+
+
+      .search_btn{
+            margin:4px auto;
+            font-size: 0.8rem;
+      }
+      .search_btn:hover{
+            margin:4px auto;
+            font-size: 0.8rem;
+      }
+
+      .carousel-item{
+            height: 80vh;
+            min-height: 300px;
+      }
+      
+      .card_stack{
+            flex-direction: column;
+      }
+      
+      .main_container{
+            flex-direction: column;
+      
+      }
+      .container{
+            width: 100%;  
+      }
+      .carousel-caption{
+            top: 52%;
+            left: 50%;
+           
+      }
+      .carousel-caption h1{
+            font-size: 1.6rem;
+      }
+      .carousel-caption p{
+            font-size: 0.8rem;
+      }
+      
+      .btn-primary{
+            font-size: 0.8rem;
+           
+      }
+      .btn-primary:hover{
+            font-size: 0.8rem;
+            
+      }
+      
+
+
+} */
+
+
+/* ___________________________________________________________ */
+/* 
+@media screen and (max-width: 484px){
+      .nav_menu{
+            flex-direction: column;
+            padding: 4px 0px;
+      }
+      .navbar{
+            flex-direction: column;
+            
+      }
+
+      .nav_search{
+            padding-bottom: 6px;
+      }
+      .burger{
+            display: block;
+      }
+
+      header{
+            transform: all 10.0 ease-out ;
+            height: 240px;
+      }
+
+} */
+
