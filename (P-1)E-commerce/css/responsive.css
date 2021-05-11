@@ -1,0 +1,62 @@
+@media screen and (max-width:1030px){
+      nav{
+            flex-direction: column;
+      }
+
+      .navbar{
+            flex-direction: column;
+      }
+
+      ul{
+            flex-direction: column;
+      }
+      .search{
+            margin: 8px 40px;
+      } 
+      .cardtSlotBox{
+            flex-direction: column;
+            /* overflow: scroll; */
+      }
+      .btn2{
+            width: 20vh;
+      }
+
+      .burger{
+            display: block;
+      }
+
+      .V-responsive{
+            opacity: 0;
+      }
+
+      .H-responsive{
+            height: 130px;
+      }
+}
+
+@media screen and (max-width:360px){
+      ul{
+            flex-direction: column;
+      }
+      .search{
+            flex-direction: column;
+      }
+
+      .btn{
+            width: 94%;
+      }
+      .btn:hover{
+            width: 57%;
+      }  
+      .main_container{
+            grid-auto-flow: column;
+      
+      }
+      
+      
+}
+
+
+
+
+

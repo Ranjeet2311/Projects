@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+:root {
+      --main-bg-color: rgb(29, 161, 242);
+    }
+
+*{
+      padding: 0;
+      margin: 0;
+      font-family: 'Play', sans-serif;
+      scroll-behavior: smooth;
+}
+
+.navbar{
+      background-color: var(--main-bg-color);
+      font-family: 'Play', sans-serif;
+      display: flex;
+      justify-content:flex-start;
+      align-items: center;
+      min-height: 150px;
+}
+
+
+.logo{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* height: 10px; */
+      padding: 10px;
+      margin: 0px 30px;
+      
+
+}
+.logo img{
+      width: 45px;   
+
+}
+.logo p{
+      padding: 6px;
+      font-family: cursive;
+      font-size: 10px;
+      color: white;
+}
+
+nav{
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+}
+
+nav ul{
+      /* min-height: 60px; */
+      display: flex;
+      justify-content:flex-start;
+      align-items: center;
+      
+}
+
+nav ul li{
+      list-style: none;
+      padding: 0px 12px;
+      margin: 0px 8px;
+}
+nav ul li a{
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+      
+}
+nav ul li a:hover{
+      /* font-style: bold; */
+      cursor:grab;
+      color: rgb(249, 251, 252);
+      text-decoration: none;
+        
+}
+
+.container{
+      /* min-height: calc(100vh - 60px - 16vh); */
+      height: 24vh;
+
+}
+
+.search{
+      display: flex;
+      align-items: center;
+      margin: 0px 40px;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 1.4rem;
+}
+.search input{
+      margin: 6px 0px;
+      width: 30vw;
+      padding: 0px 10px;
+      height: 35px;
+      border-radius: 3px;
+      border: 0;
+      outline: none;
+      font-family: 'Play', sans-serif;
+
+
+}
+
+.btn{
+      width: auto;
+      font-size: 1.5rem;
+      padding: 6px 15px;
+      margin: 0px 15px;
+      background: transparent;
+      border-radius: 3px;
+      border: 2px solid white;
+      color: white;
+}
+.btn:hover{
+      cursor: pointer;
+      color: rgb(29, 161, 242);
+      background:rgb(247, 249, 250);
+      font-weight: 700;
+}
+
+
+/* -----------------burger -------------- */
+
+.burger{
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      width:10%;
+      display: none;
+      border: 4px solid white;
+      cursor: pointer;
+}
+
+.line{
+      z-index: 1;
+      background-color: white;
+      height: 8px;
+      margin: 11px 2px;
+      width: 94%;
+}
+
+
+
+
+
+/* _______________Navigation Finished__________________ */
+
+
+#slider-Home{
+      background-color: rgb(253, 252, 252);
+      height: 353px;
+      /* width: 100%; */
+      overflow: hidden;
+      margin: auto;
+      display:flex;
+      justify-content: center;
+      
+      
+}
+
+.slider1{
+      transform: translate(-20vw);
+      animation: slide1 12s infinite ease-in-out;
+      max-width: 100%;
+      display: block;
+      margin: auto;
+      top: 0;
+      left: 0;
+      width: 100%;
+      /* position: relative;
+      text-align: center;
+      color: red; */
+
+}
+.slider2{
+      transform: translate(0vw); 
+      animation: slide2 12s infinite ease-in-out;
+      max-width: 100%;
+      display: block;
+      margin: auto;
+      top: 0;
+      left: 0;
+      width: 100%;
+      
+      
+}
+/* .slider3{
+      transform: translate(20vw);
+      animation: slide3 12s infinite ease-in-out;
+      max-width: 100%;
+      display: block;
+      margin: auto;
+      top: 0;
+      left: 0;
+      width: 100%;      
+
+} */
+
+.centered{
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* background-color: rgb(182, 173, 173); */
+      padding: 6px 8px;
+
+}
+.centered h1{
+      font-family: 'Play', sans-serif;
+      position: relative;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px rgb(0, 6, 10);
+
+
+}
+.centered p{
+      font-family: 'Play', sans-serif;
+      position: relative;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px rgb(1, 12, 19);
+
+}
+
+.btn1{
+      border-radius: 6px;
+      text-align: center;
+      display: block;
+      margin: 10px auto;
+      width: 30%;
+      /* text-shadow: 2px 2px rgb(241, 243, 245); */
+
+}
+.btn1:hover{
+      border-radius: 6px;
+      text-align: center;
+      display: block;
+      margin: 10px auto;
+      width: 30%;
+      
+}
+
+.AboveBox{
+      height: 30vh;
+      display: flex;
+      justify-content: space-between;
+      margin: 50px auto 0px auto;
+      padding: 0px 40px;
+      font-family: 'Play', sans-serif;
+}
+
+.btn2{
+      color: black;
+      border: 2px solid var(--main-bg-color);
+      background-color: var(--main-bg-color);
+      border-radius: 6px;
+      display: block;
+      margin: 20px auto;
+      padding: 10px 10px;
+      /* width: 30%; */
+      /* text-shadow: 2px 2px rgb(1, 12, 19); */
+      width: 28vh;
+      font-size: 15px;
+      font-family: 'Play', sans-serif;
+}
+.btn2:hover{
+      color: white;
+      border: 2px solid var(--main-bg-color);
+      background-color: var(--main-bg-color);
+      border-radius: 6px;
+      padding: 10px 20px;
+      display: block;
+      margin: 20px auto;
+      padding: 10px 10px;
+      /* width: 30%; */
+      width: 28vh;
+      font-size: 15px;
+      font-family: 'Play', sans-serif;
+}
+
+hr{
+      display: block;
+      margin: auto;
+      max-width: 90%;
+      margin: 5px 0px;
+}
+
+.cardtSlotBox{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0px auto 40px auto;
+      overflow: hidden;
+
+      
+}
+.cardtSlotBoxs:hover{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: auto;
+      overflow: hidden;  
+}
+
+.cardtSlotBox img{
+      width: 140px;
+      height: 180px;
+      object-fit: contain;     
+}
+.cardtSlotBox img:hover{
+      width: 140px;
+      height: 180px;
+      object-fit: contain;
+      cursor: pointer;  
+      transform: scale(1.1); 
+}
+
+.cardtSlotBox h2{
+      text-align: center;
+      font-size: 12px;
+      font-family: 'Play', sans-serif;
+}
+.cardtSlotBox h2:hover{
+      color: var(--main-bg-color);
+      text-align: center;
+      font-size: 12px;
+      cursor: pointer;
+      font-family: 'Play', sans-serif;
+      transform: scale(1.1);
+}
+
+.cardtSlotBox p{
+      text-align: center;
+      font-size: 12px;
+      font-family: 'Play', sans-serif;
+}
+.cardtSlotBox p:hover{
+      color: var(--main-bg-color);
+      text-align: center;
+      font-size: 12px;
+      cursor: pointer;
+      font-family: 'Play', sans-serif;
+      transform: scale(1.1);
+}
+
+
+footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: var(--main-bg-color);
+      height: 10vh;
+      font-size: 12px;
+      font-family: 'Play', sans-serif;
+}
+
+/* @keyframes slide1{
+     0%{
+      <img src="img/slimg1 (2).jpg">
+     }
+     45%{
+      <img src="img/slimg2 (2).jpg">
+     }
+     85%{
+     <img src="img/slimg3 (2).jpg">
+     }
+} */
+
+
+/* Slide Media query */
+
+@keyframes slide1{
+      0%{
+            transform: translate(-60vw)
+      }
+      100%{
+            transform: translate(48vw)
+      }
+}
+@keyframes slide2{
+      0%{
+            transform: translate(-48vw)
+      }
+      100%{
+            transform: translate(94vw)
+      }
+}
+
+
+/* ------------------------- */
+
+
+
+/* @keyframes slide3{
+      0%{
+            transform: translate(0vw)
+      }
+      100%{
+  
+                transform: translate(94vw)
+      } */
+}
