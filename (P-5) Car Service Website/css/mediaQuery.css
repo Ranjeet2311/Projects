@@ -1,0 +1,78 @@
+@media screen and (max-width: 900px){
+      /* #navbar{
+            flex-direction: column;
+      } */
+
+      /* .navlist{
+            flex-direction: column;
+      } */
+
+
+      .call{
+            text-align: center;
+
+      }
+
+      .caption h1{
+            font-size: 2.5rem;
+            padding: 4px 4px;
+      }
+      .caption p{
+            font-size: 1.5rem;
+      }
+
+      .caption{
+            top: 100px;
+            left: 90px;
+            transform: translate(33%, 90%);
+      
+      }
+      .main{
+            flex-direction: column;
+      }
+      .container{
+            flex-direction: column;
+      }
+
+
+}
+
+@media screen and (max-width: 750px){
+      .navbar{
+            flex-direction: column;
+            transform: translate(-10);
+      }
+      .navlist{
+            flex-direction: column;
+      }
+      .caption{
+            display: none;
+      
+      }
+
+      .v-Responsive{
+            opacity: 0;
+      }
+
+      .h-responsive{
+            height: 130px;
+      }
+
+      .burger{
+            display: block;
+      }
+
+/* __________X button in burger_________________________ */
+
+      .burger.responsiveX.line:nth-child(2){
+            opacity: 0;
+
+      }
+
+      .burger.responsiveX.line:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+      }
+      .burger.responsiveX.line:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+      }
+}

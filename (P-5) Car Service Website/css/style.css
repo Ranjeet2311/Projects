@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+
+
+
+
+*{
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar{
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      background-color: #000428;
+      padding: 0px 20px;
+      z-index: 1;
+
+}
+.logo{
+      width: 50px;
+      filter: invert(100%);
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 6px; 
+      border: 2px solid rgb(10, 10, 10);
+      border-radius: 50%;
+}
+.logo img{
+      width: 35px;
+}
+
+.navlist{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      margin: 0px 66px;
+
+}
+.navlist ul{
+      margin: 0px 20px;
+      padding-left: 0rem;
+
+}
+.navlist li{
+      list-style: none;
+      padding: 0px 4px;
+      margin: 2px 20px;
+
+}
+.navlist li a{
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+      font-size: 1.6rem;
+}
+.navlist li a:hover{
+      text-decoration: none;
+      color: #009FFF;
+      cursor: pointer;
+      font-size: 1.6rem;
+}
+
+
+.call{
+      width: 50%;
+      text-align: end;
+      margin: 0px 20px;
+}
+
+.btn-s{
+      margin: 8px 4px;
+      padding: 8px 20px;
+      font-size: 1.4rem;
+      border-radius: 6px;
+      border:none;
+      cursor: pointer;
+      z-index: 1;
+      color: white;
+      background: #009FFF;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to bottom, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to bottom, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+.btn-s:hover{
+      color: white;
+      background: #009FFF;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to bottom, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to bottom, #009FFF, #ec2F4B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.burger{
+      position: absolute;
+      top: 50px;
+      right: 0%;
+      width: 15%;
+      display: none;
+}
+
+.line{
+      background-color: white;
+      width: 50%;
+      height: 10px;
+      padding: 4px;
+      margin-bottom: 6px;
+}
+
+
+/* ______________Hero image/___________________ */
+
+.background{
+      background: #808080 url(/img/alan-flack-VtfiPvSGh5s-unsplash.jpg);
+}
+.hero{
+      width: 100vw;
+      opacity: 0.8;
+}
+
+.hero img{
+      width: 100%;
+      max-height: 700px;
+}
+
+.caption{
+      color: white;
+      width: 60%;
+      position: absolute;
+      top: 34px;
+      left: 50px;
+      transform: translate(33%, 30%);
+      padding: 10px 0px;
+
+}
+
+.caption h1{
+      font-size: 3.6rem;
+      padding: 4px 4px;
+}
+.caption p{
+      font-size: 2.0rem;
+}
+
+
+/* ___________Main body starts------- */
+
+header{
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+header:hover{
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transform: rotate(-4deg);
+      transform: all 6s ease;
+}
+
+header h1{
+      font-size: 3.6rem;
+      padding: 4px 4px;
+}
+header p{
+      font-size: 2.0rem;
+}
+header hr{
+      background: black;
+      width: 40%;
+}
+
+/* _____________________main ______________ */
+
+.main{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 4px 20px;
+      margin: 10px 0px ;
+      
+}
+
+.child{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 60%;
+      padding: 4px 20px;
+      
+      /* padding: 4px 6px;
+      border-radius: 8px; */
+}
+
+.child:hover{
+      color: rgb(8, 8, 8);
+      /* padding: 4px 6px; */
+      cursor: pointer;
+
+}
+
+.child img{
+      width: 35%;
+      filter: drop-shadow(2px 4px 6px #032e8b);
+      
+}
+.child img:hover{
+      width: 35%;
+      transform: translate(-30px, 0px);
+      transition: all 0.8s ease;
+      
+}
+
+.child h1{
+      font-size: 2.5;
+      color: #080808;
+
+}
+.child p{
+      font-size: 2.5;
+      color: #080808;
+
+}
+
+/* __________footer-------------- */
+
+.container{
+      width: 100%;
+      color: white;
+      background: #000428;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.container h2{
+     font-size: 1rem;
+}
+
+.foot{
+      margin: 30px 100px;
+      padding: 2px 4px;
+}
+.foot h2{
+      font-size: 2rem;
+      padding: 2px 4px;
+}
+.foot li{
+      font-size: 1.6rem;
+      padding: 2px 4px;
+}
+.foot li:hover{
+      cursor: pointer;
+}
+
+
+.footer-note{
+      color: white;
+      padding: 4px 6px;
+      margin: 2px 8px;
+      text-align: center;
+      background: rgb(0, 4, 40);  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+
+
