@@ -1,0 +1,10 @@
+@media screen and(max-width:1142px){
+      .headbar_main .head_bar a {
+            font-size: 0.8rem;
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+          }
+
+
+}
